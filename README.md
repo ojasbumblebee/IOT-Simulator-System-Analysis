@@ -10,10 +10,10 @@ Launch Script
 set command line arguments accordingly
 
 ```
-python3 task_2.py --mean_inter_arrival_time 6 \n
-		  --mean_orbitting_time 5 \n
-		  --service_time 10 \n
-		  --buffer_size 2 \n
+python3 task_2.py --mean_inter_arrival_time 6 \
+		  --mean_orbitting_time 5 \
+		  --service_time 10 \
+		  --buffer_size 2 \
 		  --end_simulation_time 200
 ```
 
