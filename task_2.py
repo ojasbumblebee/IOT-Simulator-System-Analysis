@@ -43,19 +43,44 @@ def accept_arguments():
     args = vars(ap.parse_args())
     return args
 
+
+#function to generate random number using congruential method
+def rng(xi, a, c, m):
+    new_xi = (a*xi + c)%m
+    return new_xi
+
+#function to generate exponential random variate using inverse transformation method
+def random_variategenerator(lambda_mean, psuedo_random_number):
+    logarithm = math.log(psuedo_random_number)
+    random_variate = logarithm/lambda_mean
+    return random_variate
+
+#main function to return generated random variate and seed
+def random_number_main(lambda_mean, seed=0.1, a=3, c=9, m=16):
+    psuedo_random_number = rng(seed, a, c, m)
+    random_variate = random_variate_generator(lambda_mean, psuedo_random_number)
+    return random_variate, psuedo_random_number
+
+#wirtes output at every instance of master clock to a text file
 def write_to_text_file(string):
     with open('results.txt', 'a') as f:
         f.write(string+'\n')            
 
+
+#function to obtain new service completion time
 def get_new_service_completion_time(cls):
     return cls + 10
 
+#function to obtain new retransmitted time 
 def get_new_retransmitted_time(clr):
     return clr + 5
-    
+
+#function to obtain new arrival time
 def get_new_arrival_time(cla):
     return cla + 6
 
+
+#Main function which iterates over master clock till end simulation time
 def main(args):
 
     mean_inter_arrival_time = args["mean_inter_arrival_time"]
@@ -70,7 +95,6 @@ def main(args):
     cls = None
     retransmitted_queue = Queue()
     
-    current_buffer_status = "is_empty"
     current_buffer_value = 0
     # Events occuring arae events_new_arrival = "1" events_service_completion = "2" events_retransmitted_arrival = "3"
     event_FLAG = "1"
