@@ -34,7 +34,7 @@ python3 task_2_exponential_arrival_time.py --mean_inter_arrival_time 6 \
                   --end_simulation_time 200
 ```
 
-To run the simulation please use th shell script :
+3.)To run the simulation please use th shell script :
 
 
 ```
