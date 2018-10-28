@@ -78,3 +78,11 @@ import ast
 import re
 import math
 ```
+
+
+Check the project task lists here:
+1.)[Task1](https://github.ncsu.edu/ovbarve/IOT_project_01/blob/master/Simulation-task%201.pdf)
+2.)[Task2](https://github.ncsu.edu/ovbarve/IOT_project_01/blob/master/Simulation-task%202%20(new).pdf)
+3.)[Task3](https://github.ncsu.edu/ovbarve/IOT_project_01/blob/master/Simulation-task%203%20(new).pdf)
+
+The output graphs and discussions can be found here: [task3 project report](https://github.ncsu.edu/ovbarve/IOT_project_01/blob/master/Task%203.pdf)
