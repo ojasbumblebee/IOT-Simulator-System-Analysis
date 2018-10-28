@@ -109,4 +109,10 @@ The system takes the following inputs :
 6.) end simulation time / or the number of new requests for which we can run simulation.                 
 ```
 
-![This is the first graph where we can see that the new arrival time increases exponentially and the confidence interval also increases as we increase the Service complete time](https://github.ncsu.edu/ovbarve/IOT_project_01/blob/master/graphs/plot_of_T.png)
+
+This is the first graph where we can see that the new arrival time increases exponentially and the confidence interval also increases as we increase the Service complete time
+![Figure 1](https://github.ncsu.edu/ovbarve/IOT_project_01/blob/master/graphs/plot_of_T.png)
+
+
+Also if we increase the buffer size the mean orbittal time time goes exponentially down and with that the confidence interval size decreases.
+![Figure 2](https://github.ncsu.edu/ovbarve/IOT_project_01/blob/master/graphs/plot_of_D_buffer.png)
